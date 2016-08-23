@@ -42,6 +42,21 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistsCtrl', function($scope) {
+  $scope.cards = [
+    { image: 'https://raw.githubusercontent.com/driftyco/ionic-ion-tinder-cards/master/demo/max.jpg' },
+    { image: 'https://raw.githubusercontent.com/driftyco/ionic-ion-tinder-cards/master/demo/perry.jpg' },
+    { image: 'https://github.com/driftyco/ionic-ion-tinder-cards/blob/master/demo/ben.png' },
+
+  ];
+
+  $scope.cardDestroyed = function(index) {
+    $scope.cards.splice(index, 1);
+  };
+
+  $scope.cardSwiped = function(index) {
+    var newCard = // new card data
+    $scope.cards.push(newCard);
+  };
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
