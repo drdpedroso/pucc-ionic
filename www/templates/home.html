@@ -1,7 +1,12 @@
+<ion-header-bar class="bar-default">
+	<h1 class="title">Ionic PUCC Tinder</h1>
+</ion-header-bar>
 <ion-content>
-  <td-cards>
-    <td-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe="cardSwiped($index)">
-      {{card.name}}
-    </td-card>
-  </td-cards>
+<td-cards>
+        <td-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)" on-partial-swipe="cardPartialSwipe(amt)" class="card-{{$index}}">
+          <div class="image">
+            <img ng-src="{{card.name}}">
+          </div>
+        </td-card>
+      </td-cards>
 </ion-content>
