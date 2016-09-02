@@ -2,8 +2,8 @@ angular.module('starter.controllers', [])
 
 .controller('HomeCtrl', function($scope) {
   $scope.cards = [
-    {name:"111111"},
-    {name:"222222"}
+    {name:"https://github.com/drdpedroso/ionic-ion-tinder-cards/blob/master/example/www/img/pic2.png?raw=true"},
+    {name:"https://github.com/drdpedroso/ionic-ion-tinder-cards/blob/master/example/www/img/pic4.png?raw=true"}
   ];
 
   $scope.cardDestroyed = function(index) {
