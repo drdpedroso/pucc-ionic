@@ -1,0 +1,7 @@
+<ion-content>
+  <td-cards>
+    <td-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe="cardSwiped($index)">
+      {{card.name}}
+    </td-card>
+  </td-cards>
+</ion-content>
