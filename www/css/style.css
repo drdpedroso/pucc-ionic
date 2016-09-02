@@ -1,15 +1,18 @@
 td-cards {
   display: block;
+  align-content: center;
 }
 
 td-card {
   position: absolute;
-  left: 50%;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  margin-left:10px; 
   margin-top: 80px;
-  margin-bottom: 40px;
-  margin-left: -150px;
-  border: 1px solid #999;
-  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  width:300px;
+  height: 300px;
   border-radius: 6px;
 }
 
@@ -18,7 +21,8 @@ td-card .image {
 }
 
 td-card img {
-  max-width: 100%;
+  width: 300px;
+  height: 300px;
   border-radius: 6px;
 }
 
