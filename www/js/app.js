@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'starter.controllers', 'ionic.contrib.ui.tinderCards'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ionic.contrib.ui.tinderCards','starter.routes'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -12,20 +12,4 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ionic.contrib.ui.tin
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
 
-  $stateProvider
-
-  // Rotas são criadas aqui:
-
-  .state('home', {
-    url: '/home',
-    templateUrl: '../templates/home.html',
-    controller: 'HomeCtrl'
-  })
-
-
-  // rota default
-  $urlRouterProvider.otherwise('/home');
-
-});
